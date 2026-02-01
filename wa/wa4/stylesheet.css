@@ -41,3 +41,13 @@
         line-height: 1.7;
         text-decoration: none;
     }
+    .friends {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .friends img {
+    width: 200px;
+    height: auto;
+    }
