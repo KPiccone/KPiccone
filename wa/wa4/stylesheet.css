@@ -1,0 +1,43 @@
+
+    p,h1,h2,h3,h4,h5,h6,footer,header,nav,main,article,section,aside {
+       font-family: Courier New, monospace;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #ebf6fa;
+    }
+    footer {
+        background-color: #a8c6f9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 93%;
+        bottom: 0;
+    }
+    h2 {
+        font-size: 2.5rem;
+        text-align: left;
+        color: #3b4469;
+        padding: 15px;
+    }
+    header {
+        background-color: #6ca4e4;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #6ca4e4;
+        padding: 15px;
+        text-align: center;
+    }
+    nav a, nav span {
+        display: inline-block;
+        font-size: 2rem;
+        height: 3rem;
+        line-height: 1.7;
+        text-decoration: none;
+    }
