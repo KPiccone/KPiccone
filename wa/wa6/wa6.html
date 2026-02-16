@@ -7,15 +7,11 @@
     <style>
         @font-face {
             font-family: 'Jacquard12';
-            src: url('jacquard12.ttf') format('truetype'),
-            font-weight: normal;
-            font-style: normal;
+            src: url('jacquard12.ttf') format('truetype');
         }
         @font-face {
             font-family: 'Bytesized';
             src: url('Bytesized-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
         }
         /* CSS Reset and Base Styles */
         :root {
@@ -35,19 +31,13 @@
             --font-display: 'Jacquard12', serif;
             --font-body:    'Bytesized', monospace;
 
-            --text-sm: 0.8rem;
-            --text-md: 1rem;
-            --text-lg: 1.25rem;
-            --text-xl: 1.953rem;
-            --text-2xl: 2.441rem;
-            --text-3xl: 3.052rem;
 
             /* Spacing System */
-            --spacing-xs: 0.25rem;
-            --spacing-sm: 0.5rem;
-            --spacing-md: 1rem;
-            --spacing-lg: 1.5rem;
-            --spacing-xl: 2rem;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
 
             /* Border Radius */
             --radius-sm: 4px;
@@ -62,7 +52,7 @@
         }
 
         body {
-            font-family: var(--font-primary);
+            font-family: var(--font-body);
             line-height: 1.6;
             background-color: var(--color-background);
             color: var(--color-text-dark);
