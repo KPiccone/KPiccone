@@ -128,6 +128,7 @@
             color: var(--color-text-light);
             text-decoration: none;
             border-radius: var(--radius-sm);
+            border: 2px solid transparent;
             transition: background-color 0.3s ease, transform 0.2s;
             cursor: pointer;
             font-family: var(--font-primary);
@@ -185,9 +186,13 @@
         }
 
         .input:focus {
-            outline:none
+            outline:none;
             border-color: var(--color-primary);
             box-shadow: 0 0 0 3px var(--color-highlight);
+        }
+
+        section {
+            margin-bottom: var(--spacing-xl);
         }
 
         /* Spacing Demonstration */
@@ -243,10 +248,10 @@
 
         <section>
             <h2>Typography</h2>
-            <h1>Heading 1 - Space Grotesk</h1>
-            <h2>Heading 2 - Space Grotesk</h2>
-            <h3>Heading 3 - Space Grotesk</h3>
-            <p class="body-text">Body Text - Using Space Grotesk with a comfortable line height and readable size.</p>
+            <h1>Heading 1 - Jacquard12</h1>
+            <h2>Heading 2 - Jacquard12</h2>
+            <h3>Heading 3 - Jacquard12</h3>
+            <p class="body-text">Body Text - Using Jacquard12 with a comfortable line height and readable size.</p>
             <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
         </section>
 
@@ -264,9 +269,16 @@
 
         <section>
             <h2>Interactive Components</h2>
-            <a href="#" class="button">Primary Button</a>
-            <a href="#" class="link">Standard Link</a>
-            <a href="#" class="link" style="color: purple;">Visited Link</a>
+            <p style="margin-bottom: var(--spacing-md);">
+                <a href="#" class="button">Primary Button</a>
+            </p>
+            <p style="margin-bottom: var(--spacing-md);">
+            <a href="#" class="link">Standard Link</a>  &nbsp;
+            <a href="#" class="link" style="color: var(--color-neutral);">Visited Link</a>
+            </p>
+            <p>
+                <input class="input" type="text" placeholder="Form Input">
+            </p>
         </section>
     </div>
 </body>
