@@ -13,7 +13,9 @@
         }
         @font-face {
             font-family: 'Bytesized';
-            src: url();
+            src: url('Bytesized-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
         }
         /* CSS Reset and Base Styles */
         :root {
@@ -30,8 +32,15 @@
             --color-text-light: white;
 
             /* Typography */
-            --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-secondary: 'Roboto Mono', monospace;
+            --font-display: 'Jacquard12', serif;
+            --font-body:    'Bytesized', monospace;
+
+            --text-sm: 0.8rem;
+            --text-md: 1rem;
+            --text-lg: 1.25rem;
+            --text-xl: 1.953rem;
+            --text-2xl: 2.441rem;
+            --text-3xl: 3.052rem;
 
             /* Spacing System */
             --spacing-xs: 0.25rem;
