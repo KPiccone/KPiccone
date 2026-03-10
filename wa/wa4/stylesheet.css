@@ -1,53 +1,105 @@
-
-    p,h1,h2,h3,h4,h5,h6,footer,header,nav,main,article,section,aside {
-       font-family: Courier New, monospace;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        padding: 20px;
-        background-color: #ebf6fa;
-    }
-    footer {
-        background-color: #1C589B;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        width: 93%;
-        bottom: 0;
-    }
-    h2 {
-        font-size: 2.5rem;
-        text-align: left;
-        color: #3b4469;
-        padding: 15px;
-    }
-    header {
-        background-color: #1C589B   ;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {
-        background-color: #1C589B;
-        padding: 15px;
-        text-align: center;
-    }
-    nav a, nav span {
-        display: inline-block;
-        font-size: 2rem;
-        height: 3rem;
-        line-height: 1.7;
-        text-decoration: none;
-    }
-    .friends {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        align-items: flex-start;
-    }
-    .friends img {
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('PixelifySans.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Jersey10';
+    src: url('Jersey10.ttf') format('truetype');
+}
+p,h3,h4,h5,h6,footer,header,nav,main,article,section,aside {
+    font-family: 'Jersey10', Courier New, monospace;
+}
+body {
+    font-family: 'Jersey10', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebf6fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    background-color: #1C589B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Jersey10', Courier New, monospace;
+    font-size: 3rem;
+}
+h2 {
+    font-family: 'PixelifySans', Courier New, monospace;
+    font-size: 2.8rem;
+    text-align: left;
+    color: #3b4469;
+    padding: 10px;
+}
+header {
+    background-color: #1C589B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #1C589B;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+nav a.nav-home {
+    float: left;
+}
+main {
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.about-text {
+    width: 55%;
+    font-size: 1.4rem;
+}
+.about-text p {
+    margin-bottom: 15px;
+}
+.profile-pic {
+    width: 500px;
+    flex-shrink: 0;
+    margin-left: auto;
+    border: 10px solid white;
+}
+#contact {
+    margin-top: auto;
+    padding-top: 40px;
+}
+.friends {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+.friends img {
     width: 200px;
     height: auto;
-    }
+}
